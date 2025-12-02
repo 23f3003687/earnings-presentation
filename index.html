@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 2024 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    <style>
+        .reveal .slides section .fragment.highlight-current-blue {
+            opacity: 1;
+            visibility: inherit;
+        }
+        .reveal .slides section .fragment.highlight-current-blue.current-fragment {
+            color: #42affa;
+        }
+        .email-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.5em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+                <h1>Q4 2024 Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p>
+                    <small>Prepared by Technical Consulting Team</small><br>
+                    <small>Contact: <a href="mailto:23f3003687@ds.study.iitm.ac.in">23f3003687@ds.study.iitm.ac.in</a></small>
+                </p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 2024 earnings presentation. Today we'll review our financial performance, 
+                    key metrics, and strategic initiatives for the upcoming year.
+                </aside>
+            </section>
+
+            <!-- Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    Our Q4 performance demonstrates **strong growth** across key metrics:
+                    
+                    - Revenue increased by 23% YoY
+                    - Operating margin improved to 42%
+                    - Customer acquisition grew by 156%
+                    - Digital transformation initiatives on track
+                    
+                    > "This quarter represents a pivotal moment in our institution's digital evolution."
+                </textarea>
+                <aside class="notes">
+                    Highlight the key achievements. Emphasize the digital transformation success and customer growth.
+                </aside>
+            </section>
+
+            <!-- Animated Fragments Slide -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                <ul>
+                    <li class="fragment fade-in-then-semi-out">Total Revenue: <strong>$2.4B</strong> (+23% YoY)</li>
+                    <li class="fragment fade-in-then-semi-out">Net Income: <strong>$680M</strong> (+31% YoY)</li>
+                    <li class="fragment fade-in-then-semi-out">EPS: <strong>$4.52</strong> (Beat estimates by $0.37)</li>
+                    <li class="fragment fade-in-then-semi-out">Operating Cash Flow: <strong>$890M</strong> (+18% YoY)</li>
+                    <li class="fragment highlight-current-blue">Return on Equity: <strong>18.7%</strong> (Industry-leading)</li>
+                </ul>
+                <aside class="notes">
+                    Walk through each metric one by one. Pause after ROE to emphasize our competitive advantage.
+                    Be prepared to discuss the factors driving the EPS beat.
+                </aside>
+            </section>
+
+            <!-- Code Sample Slide -->
+            <section>
+                <h2>API Integration Example</h2>
+                <p>Our new payment processing system:</p>
+                <pre><code class="language-python" data-trim data-line-numbers="1-2|4-8|10-12">
+import financial_api as fapi
+from decimal import Decimal
+
+def process_transaction(account_id, amount, currency='USD'):
+    """Process secure financial transaction"""
+    transaction = fapi.Transaction(
+        account=account_id,
+        amount=Decimal(amount),
+        currency=currency,
+        secure=True
+    )
+    return transaction.execute()
+
+# Example usage
+result = process_transaction('ACC-12345', 1500.00)
+print(f"Transaction Status: {result.status}")
+                </code></pre>
+                <aside class="notes">
+                    This shows our modernized API infrastructure. Line 1-2: imports, lines 4-8: core function, 
+                    lines 10-12: execution. Emphasize security and decimal precision for financial accuracy.
+                </aside>
+            </section>
+
+            <!-- Mathematical Formulas Slide -->
+            <section>
+                <h2>Financial Modeling</h2>
+                <p>Sharpe Ratio Analysis:</p>
+                <p>
+                    $$S = \frac{R_p - R_f}{\sigma_p}$$
+                </p>
+                <p class="fragment fade-up">Where:</p>
+                <ul>
+                    <li class="fragment fade-up">\(R_p\) = Portfolio return = 15.3%</li>
+                    <li class="fragment fade-up">\(R_f\) = Risk-free rate = 4.5%</li>
+                    <li class="fragment fade-up">\(\sigma_p\) = Portfolio std deviation = 8.2%</li>
+                </ul>
+                <p class="fragment highlight-blue">
+                    <strong>Result: Sharpe Ratio = 1.32</strong> (Excellent risk-adjusted returns)
+                </p>
+                <aside class="notes">
+                    Our Sharpe ratio of 1.32 indicates excellent risk-adjusted performance. 
+                    Any ratio above 1.0 is considered good; above 2.0 is very good. We're well-positioned.
+                </aside>
+            </section>
+
+            <!-- Additional Formula Slide -->
+            <section>
+                <h2>Portfolio Valuation</h2>
+                <p>Discounted Cash Flow Model:</p>
+                <p>
+                    $$PV = \sum_{t=1}^{n} \frac{CF_t}{(1+r)^t}$$
+                </p>
+                <div class="fragment">
+                    <p>Weighted Average Cost of Capital:</p>
+                    <p>
+                        $$WACC = \frac{E}{V} \times R_e + \frac{D}{V} \times R_d \times (1-T_c)$$
+                    </p>
+                </div>
+                <aside class="notes">
+                    These are the core formulas driving our valuation models. 
+                    Our current WACC is 7.8%, which we use for all DCF analyses.
+                </aside>
+            </section>
+
+            <!-- Strategic Initiatives Slide -->
+            <section data-auto-animate>
+                <h2>2025 Strategic Priorities</h2>
+                <div class="r-stack">
+                    <div class="fragment fade-in-then-out">
+                        <h3>Q1: Infrastructure Modernization</h3>
+                        <p>Cloud migration & API enhancement</p>
+                    </div>
+                    <div class="fragment fade-in-then-out">
+                        <h3>Q2: Product Innovation</h3>
+                        <p>Launch new digital banking suite</p>
+                    </div>
+                    <div class="fragment fade-in-then-out">
+                        <h3>Q3: Market Expansion</h3>
+                        <p>Enter 3 new geographic markets</p>
+                    </div>
+                    <div class="fragment fade-in">
+                        <h3>Q4: AI Integration</h3>
+                        <p>Deploy ML-powered risk analytics</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Walk through each quarter's priorities. Q1 focuses on foundation, 
+                    Q2 on products, Q3 on growth, Q4 on innovation. Each builds on the previous.
+                </aside>
+            </section>
+
+            <!-- Closing Slide -->
+            <section data-background-gradient="linear-gradient(to bottom, #17b2c3, #283b95)">
+                <h2>Questions & Discussion</h2>
+                <p>Thank you for your attention</p>
+                <br>
+                <p><small>For detailed analysis and reports, contact:</small></p>
+                <p><a href="mailto:23f3003687@ds.study.iitm.ac.in">23f3003687@ds.study.iitm.ac.in</a></p>
+                <aside class="notes">
+                    Open floor for questions. Be prepared to discuss: revenue drivers, 
+                    margin improvement strategies, competitive positioning, and 2025 guidance.
+                </aside>
+            </section>
+        </div>
+    </div>
+
+    <div class="email-footer">
+        Contact: 23f3003687@ds.study.iitm.ac.in
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/math/math.min.js"></script>
+    
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+    </script>
+</body>
+</html>
